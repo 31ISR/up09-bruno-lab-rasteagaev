@@ -1,0 +1,25 @@
+info:
+  name: get_items_bids
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{base_url}}/api/items/:id/bids"
+  params:
+    - name: id
+      value: "1773206560322"
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "amount": 85000
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
