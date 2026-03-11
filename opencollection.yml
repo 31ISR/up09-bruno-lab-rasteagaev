@@ -1,0 +1,29 @@
+opencollection: 1.0.0
+
+info:
+  name: rasteagev-bruno-lab
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3NzMyMTk3ODcyMjYsInVzZXJuYW1lIjoidGVzdHVzZXIyIiwiaWF0IjoxNzczMjE5Nzg3LCJleHAiOjE3NzMzMDYxODd9.daJAJfGHjymNLLGcFFZti1skBrJj8ocjh3Ws2l2hf-Q
+  variables:
+    - name: base_url
+      value: https://kitek.ktkv.dev/marketplace/
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
